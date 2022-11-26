@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ming's Diner | Home</title>
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="./main.css" />
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <!-- FONT AWESOME CDN -->
+    <script
+      src="https://kit.fontawesome.com/0581082bd4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- NAVBAR BEGINS -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #f5fcf4">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img id="logo" src="./images/logo.png" alt="Ming's Diner" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          style="text-align: center"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menuItems">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutUs">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link table-btn" href="./booktable.html"
+                >Book Table</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR ENDS -->
+
+    <!-- HERO SECTION BEGINS -->
+    <div class="container col-xl-12 col-md-9 px-4 py-0">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-12 col-sm-12 col-lg-6" data-aos="fade-up">
+          <img
+            src="./images/gridd.png"
+            id="grid_image"
+            class="d-block mx-lg-auto img-fluid"
+            alt="food images"
+          />
+        </div>
+        <div class="col-lg-6" data-aos="fade-down">
+          <h1 class="display-6 fw-bold lh-1 mb-3 land_text">
+            The flavour of <br />tradition
+          </h1>
+          <p class="lead land_lead">
+            We are a multi-cuisine restaurant offering a wide variety of food
+            experience in both casual and fine dining environment with a pinch
+            of luxury and happiness.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="#menuItems"
+              ><button
+                type="button"
+                class="btn primary-btn btn-lg px-4 me-md-2"
+              >
+                Explore Menu
+              </button></a
+            >
+            <a href="./booktable.html" class="cta_button"
+              ><button type="button" class="btn secondary-btn btn-lg px-4">
+                Book Table
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- HERO SECTION ENDS -->
+
+    <!-- CTA SECTION BEGINS -->
+    <div class="container col-xl-12 col-md-9 px-4 py-5" id="storeInfo">
+      <div
+        class="row g-2 py-5 row-cols-3 row-cols-lg-3 align-items-center"
+        data-aos="flip-up"
+      >
+        <div class="storeInfo_col one col">
+          <div
+            class="storeInfo-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3"
+          >
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <h3 class="storeInfo_title">Location</h3>
+          <p class="storeInfo_para">Dongcheng, Jinbao St, China Beijing</p>
+        </div>
+        <div class="storeInfo_col two col">
+          <div
+            class="storeInfo-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3"
+          >
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <h3 class="storeInfo_title">Opening Hours</h3>
+          <p class="storeInfo_para">10AM - 7PM</p>
+        </div>
+        <div class="storeInfo_col three col">
+          <div
+            class="storeInfo-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3"
+          >
+            <i class="fa-solid fa-phone-volume"></i>
+          </div>
+          <h3 class="storeInfo_title">Contact Us</h3>
+          <p class="storeInfo_para">+86 10 8522 1234</p>
+        </div>
+      </div>
+    </div>
+    <!-- CTA SECTION ENDS -->
+
+    <!-- MENU SECTION BEGINS -->
+    <div class="container col-xxl-12 col-md-10 px-4 py-5" id="menuItems">
+      <h4 class="pb-2 menu_title">Top Dishes</h4>
+      <div class="row g-2" data-aos="zoom-in-up">
+        <div class="col-lg col-md-12 menu_col d-flex align-items-start">
+          <div class="menu_image">
+            <img
+              class="img-fluid"
+              src="./images/menu2.png"
+              id="menu_image"
+              style="height: 80px; width: 140px"
+            />
+          </div>
+          <div class="menu_des">
+            <h3 class="fs-3 menu_title">Spicy Ball Soup</h3>
+            <h6 class="menu_price">¥20</h6>
+            <p>
+              <img
+                src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+              />
+            </p>
+          </div>
+        </div>
+        <div class="col-lg menu_col d-flex align-items-start">
+          <div class="menu_image">
+            <img
+              src="./images/menu3.png"
+              id="menu_image"
+              style="height: 80px; width: 140px"
+            />
+          </div>
+          <div class="menu_des">
+            <h3 class="fs-3 menu_title">Al-Fungi Noodles</h3>
+            <h6 class="menu_price">¥25</h6>
+            <p>
+              <img
+                src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+              />
+            </p>
+          </div>
+        </div>
+        <div class="col-lg menu_col d-flex align-items-start">
+          <div class="menu_image">
+            <img
+              src="./images/menu4.png"
+              id="menu_image"
+              style="height: 80px; width: 140px"
+            />
+          </div>
+          <div class="menu_des">
+            <h3 class="fs-3 menu_title">Signature Platter</h3>
+            <h6 class="menu_price">¥45</h6>
+            <p>
+              <img
+                src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+              />
+            </p>
+          </div>
+        </div>
+        <div class="col-lg menu_col d-flex align-items-start">
+          <div class="menu_image">
+            <img
+              src="./images/menu5.png"
+              id="menu_image"
+              style="height: 80px; width: 140px"
+            />
+          </div>
+          <div class="menu_des">
+            <h3 class="fs-3 menu_title">Ming's Special</h3>
+            <h6 class="menu_price">¥55</h6>
+            <p>
+              <img
+                src="https://d33wubrfki0l68.cloudfront.net/811242299f9eb954ff5d6061698f7f76e69c3dbc/75c2c/images/3star.png"
+              />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MENU SECTION ENDS -->
+
+    <!-- DISCOUNT SECTION BEGINS -->
+    <div class="container col-xxl-12 col-md-10 px-4 py-5">
+      <div class="jumbotron py-5 p-5 mb-4 rounded-3" data-aos="zoom-out">
+        <h3 class="jumbo_text">We're Coming Soon...</h3>
+        <br />
+        <h6 class="disc_text">
+          Buy 1 dish & Get one <span style="color: #26643b">FREE</span> - On
+          your first order
+        </h6>
+        <p class="disc_promo" style="text-align: center">
+          <span style="color: #26643b; font-weight: bold">PROMO CODE:</span>
+          <span style="font-weight: bold">FIRSTORDER</span>
+        </p>
+        <p class="features">
+          <i class="fa-solid fea fa-utensils fa-2x"></i>
+          <i class="fa-solid fea fa-fish fa-2x"></i>
+          <i class="fa-solid fea fa-leaf fa-2x"></i>
+        </p>
+        <!-- <div class="discount_illus">
+          <img class="illustration" src="./images/discount-illustration.png" />
+        </div> -->
+      </div>
+    </div>
+    <!-- DISCOUNT SECTION ENDS -->
+
+    <!-- ABOUT SECTION BEGINS -->
+    <div class="container col-xxl-6 py-5" id="aboutUs">
+      <h4 class="pb-2 about_us">Our Story</h4>
+
+      <div class="row py-5">
+        <div class="col-sm-6" data-aos="fade-right">
+          <img class="img-fluid chef" src="./images/chef.png" />
+        </div>
+        <div class="col-sm-6 d-flex align-items-center" data-aos="fade-left">
+          <p class="about_text">
+            <span style="font-weight: bold; font-family: Poppins"
+              >It's all started since 1998.</span
+            ><br />Welcome to Ming's Diner. We take pride in delivering warm,
+            friendly service and creating mouth-watering culinary delights for
+            all. Using only the freshest locally sourced ingredients, we’ll
+            ensure you have a dining experience to remember. Since 1998, we are
+            the perfect place for a romantic meal for two, a catch-up with
+            friends, family parties, business meetings, and bringing loved ones
+            together. With comfortable surroundings, affordable prices, and
+            seating for up to 65 guests, we can cater for all occasions.
+          </p>
+        </div>
+      </div>
+      <br />
+      <div class="row py-5">
+        <div class="col-sm-6">
+          <h2 class="carousel_title">
+            <span class="caro_title">Our</span><br />Gallery
+          </h2>
+        </div>
+        <div class="col-sm-6">
+          <div id="aboutUsCarousel" class="slide py-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./images/r-1.png"
+                  class="d-block w-100 h-100"
+                  alt="Restaurant"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/r-2.png"
+                  class="d-block w-100 h-100"
+                  alt="Restaurant-Lounge"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/r-3.png"
+                  class="d-block w-100 h-100"
+                  alt="Restaurant"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ABOUT SECTION ENDS -->
+
+    <!-- NEWSLETTER BEGINS -->
+    <div class="container col-xxl-12 col-md-10 px-4 py-0">
+      <div class="box" data-aos="zoom-in">
+        <div class="row">
+          <div class="col-sm-6">
+            <h3 class="newsletter_title">Join Our Newsletter</h3>
+            <p class="newsletter_text">
+              Get notified with the latest news and recent offers from the
+              “Ming's Diner”
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <div class="input input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Your Email Address"
+                aria-label="Your Email Address"
+              />
+              <button class="btn btn-nl" type="button">Join</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- NEWSLETTER ENDS -->
+
+    <!-- FOOTER SECTION BEGINS -->
+    <div class="container">
+      <footer class="py-5 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link px-2 text-muted">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menuItems" class="nav-link px-2 text-muted">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#aboutUs" class="nav-link px-2 text-muted">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link px-2 text-muted"
+              >Contact Us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./booktable.html" class="nav-link px-2 text-muted"
+              >Book Table</a
+            >
+          </li>
+        </ul>
+        <p class="text-center text-muted">
+          &copy; 2022 Kite Technologies, Corporation
+        </p>
+      </footer>
+    </div>
+    <!-- FOOTER SECTION ENDS -->
+
+    <!-- BOOTSTRAP JS BUNDLE -->
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS SCRIPT -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
