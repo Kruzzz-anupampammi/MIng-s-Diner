@@ -1,0 +1,512 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@500;600&family=Raleway:wght@400;500;600&display=swap");
+:root {
+  --green-1: #26643b;
+  --green-2: #a2de96;
+  --lightGreen-1: #d6e5d8;
+  --lightGreen-2: #f5fcf4;
+  --black-1: #3b413a;
+  --black-2: #3f3c3c;
+  --black-3: #5b6359;
+  --white-1: #e8e8e8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden !important;
+  background-color: #f5fcf4 !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+li {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  margin: 10px;
+}
+
+li,
+a {
+  color: #3f3c3c !important;
+}
+
+li,
+a:hover {
+  color: #26643a !important;
+}
+
+.table-btn {
+  height: 50px;
+  background-color: #26643a;
+  padding: 3px;
+  display: inline-block;
+  color: white !important;
+  border-radius: 10px;
+  text-align: center !important;
+  width: 100%;
+}
+
+.table-btn:hover {
+  color: white !important;
+}
+
+#grid_image {
+  height: 500px;
+  width: 100%;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+
+.land_text {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #3b413a;
+}
+
+.land_lead {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+.primary-btn {
+  width: 100%;
+  height: 50px;
+  background-color: #26643a !important;
+  padding: 3px;
+  display: inline-block;
+  color: white !important;
+  font-weight: bold !important;
+}
+
+.secondary-btn {
+  color: #26643a !important;
+  font-weight: bold !important;
+}
+
+.cta_button {
+  width: 100%;
+  text-align: center;
+}
+
+/* CTA Section */
+
+#storeInfo {
+  text-align: center;
+}
+
+.storeInfo_col {
+  height: 180px;
+  background-color: #d6e5d8;
+  padding: 25px;
+}
+
+.one {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.three {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.fa-solid {
+  color: #26643b;
+}
+
+.storeInfo_title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.storeInfo_para {
+  font-weight: normal;
+}
+
+/* MENU Section */
+
+.menu_title {
+  color: #3b413a;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.menu_col {
+  background-color: #d6e5d8;
+  width: 10%;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.menu_des {
+  margin-left: 15px;
+}
+
+.menu_image {
+  margin: 10px;
+}
+
+.menu_title {
+  font-family: "Raleway", sans-serif;
+}
+
+.menu_price {
+  color: #26643b;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+/* DISCOUNT */
+.jumbotron {
+  background: #d6e5d8 url(./images/discount-illustration.png) no-repeat bottom
+    right / 120px;
+  /* height: 635px; */
+}
+
+.jumbo_text {
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  font-size: 50px;
+  color: #3b413a;
+}
+
+.disc_text {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.disc_promo {
+  font-family: "Poppins", sans-serif;
+}
+
+.features {
+  text-align: center;
+}
+
+.fea {
+  margin: 10px;
+}
+
+.illustration {
+  margin-left: 195px;
+}
+
+/* ABOUT SECTION */
+.about {
+  background-color: #f5fcf4 !important;
+}
+
+.about_us {
+  color: #3b413a;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.about_text {
+  margin-top: 15px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-size: 18px;
+}
+
+.chef img {
+  height: 50px;
+}
+
+.carousel_title {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #3b413a;
+}
+
+.caro_title {
+  font-size: 15px;
+  color: black;
+}
+
+/* Newsletter */
+
+.box {
+  background-color: #a2de96;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.newsletter_title {
+  font-family: "Poppins", sans-serif;
+  color: #3b413a;
+}
+
+.newsletter_text {
+  font-family: "Raleway", sans-serif;
+}
+
+.input {
+  height: 50px;
+}
+
+.btn-nl {
+  background-color: #26643a !important;
+  color: white !important;
+  width: 80px;
+}
+
+/* CONTACT US Page */
+.contact_title {
+  font-family: "Poppins", sans-serif;
+  color: #3b413a;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+label {
+  font-family: "Raleway", sans-serif;
+  color: #3b413a;
+  margin: 5px;
+}
+
+.form_group {
+  margin: 5px;
+}
+
+.form_group input {
+  height: 50px;
+  background-color: #d6e5d8;
+}
+
+.text_area textarea {
+  background-color: #d6e5d8;
+}
+
+.submit {
+  margin-top: 10px;
+}
+
+/* CONTACT US PAGE */
+
+#form {
+  padding: 10px;
+}
+.form__title {
+  font-size: 28px;
+  color: #3b413a;
+  font-weight: bold;
+}
+.form__wrapper {
+  padding: 1rem 0;
+}
+.form__wrapper form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.form__group label {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #3b413a;
+  font-weight: bold;
+}
+.form__group input,
+.form__group textarea,
+.form__group select {
+  width: 100%;
+  border: none;
+  background-color: var(--lightGreen-1);
+  font-size: 20px;
+  font-family: Raleway;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  color: #3b413a;
+}
+.form__group textarea {
+  resize: vertical;
+}
+.form__wrapper button[type="submit"] {
+  width: max-content;
+  border: none;
+  padding: 1rem 4rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+/* IPAD SCREEN */
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    width: 100%;
+  }
+
+  #logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .primary-btn {
+    width: 200%;
+  }
+  .secondary-btn {
+    width: 150%;
+  }
+  /* .jumbotron {
+    height: 480px;
+  }
+  .illustration {
+    margin-left: 333px;
+    margin-top: -70px;
+  } */
+  .carousel_title {
+    margin-top: 100px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: #26643a;
+  }
+  .input {
+    margin-top: 20px;
+    /* height: 60px; */
+  }
+}
+
+/* DESKTOP SCREEN */
+@media screen and (min-width: 1024px) {
+  /* HERO SECTION */
+
+  #logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .table-btn {
+    width: 150px;
+  }
+  #grid_image {
+    width: 500px;
+    height: 600px;
+  }
+  .land_text {
+    text-align: left;
+  }
+  .land_lead {
+    text-align: left;
+    width: 75%;
+  }
+  .primary-btn {
+    width: 180px;
+  }
+  .cta_button {
+    width: 30%;
+  }
+
+  /* CTA SECTION */
+  .storeInfo_col {
+    border-radius: 0px;
+  }
+  .one {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .three {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .storeInfo_title {
+    font-size: 25px;
+  }
+
+  /* MENU SECTION */
+  .menu_col {
+    margin: 5px;
+    width: 100%;
+  }
+
+  /* DISCOUNT SECTION */
+  /* .jumbotron {
+    height: 330px;
+  } */
+
+  .jumbotron {
+    height: 330px;
+    background: #d6e5d8 url(./images/discount-illustration.png) no-repeat bottom
+      right / 200px;
+    /* height: 635px; */
+  }
+
+  .jumbo_text {
+    font-size: 70px;
+    color: #3b413a;
+  }
+  /* .illustration {
+    margin-left: 1013px;
+    margin-top: -250px;
+  } */
+
+  /* ABOUT US */
+  .chef {
+    height: 300px;
+    width: 300px;
+  }
+  .about_text {
+    margin-top: 0px;
+  }
+  .carousel_title {
+    margin-top: 150px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: #26643a;
+  }
+
+  /* Newsletter */
+  .input {
+    margin-top: 10px;
+    height: 60px;
+  }
+  .btn-nl {
+    width: 100px;
+  }
+
+  /* Contact Us */
+  .form__title {
+    font-size: 30px;
+  }
+  .form__wrapper {
+    padding: 10px 0;
+  }
+  .form__wrapper form {
+    grid-template-columns: 1fr 1fr;
+  }
+  .form__group__full {
+    grid-column: 1/3;
+  }
+  .form__group label {
+    font-size: 20px;
+  }
+  .form__group input,
+  .form__group textarea,
+  .form__group select {
+    font-size: 20px;
+    padding: 18px;
+    margin-top: 20px;
+  }
+}
