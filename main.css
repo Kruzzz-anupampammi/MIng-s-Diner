@@ -328,7 +328,7 @@ label {
 }
 .form__group input,
 .form__group textarea,
-.form__group select {
+.form__group .options {
   width: 100%;
   border: none;
   background-color: var(--lightGreen-1);
@@ -504,7 +504,7 @@ label {
   }
   .form__group input,
   .form__group textarea,
-  .form__group select {
+  .form__group .options {
     font-size: 20px;
     padding: 18px;
     margin-top: 20px;
