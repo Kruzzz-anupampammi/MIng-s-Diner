@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ming's Diner | Table Booking</title>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="./main.css" />
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <!-- FONT AWESOME CDN -->
+    <script
+      src="https://kit.fontawesome.com/0581082bd4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- NAVBAR BEGINS -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #f5fcf4">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img id="logo" src="./images/logo.png" alt="Ming's Diner" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          style="text-align: center"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menuItems">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutUs">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link table-btn" href="./booktable.html"
+                >Book Table</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR ENDS -->
+
+    <!-- DISCOUNT SECTION BEGINS -->
+    <div class="container col-xxl-12 col-md-10 px-4 py-5">
+      <div class="jumbotron py-5 p-5 mb-4 rounded-3" data-aos="zoom-out">
+        <h3 class="jumbo_text">We're Coming Soon...</h3>
+        <br />
+        <h6 class="disc_text">
+          Buy 1 dish & Get one <span style="color: #26643b">FREE</span> - On
+          your first order
+        </h6>
+        <p class="disc_promo" style="text-align: center">
+          <span style="color: #26643b; font-weight: bold">PROMO CODE:</span>
+          <span style="font-weight: bold">FIRSTORDER</span>
+        </p>
+        <p class="features">
+          <i class="fa-solid fea fa-utensils fa-2x"></i>
+          <i class="fa-solid fea fa-fish fa-2x"></i>
+          <i class="fa-solid fea fa-leaf fa-2x"></i>
+        </p>
+        <!-- <div class="discount_illus">
+            <img class="illustration" src="./images/discount-illustration.png" />
+          </div> -->
+      </div>
+    </div>
+    <!-- DISCOUNT SECTION ENDS -->
+
+    <!-- BOOKING FORM SECTION BEGINS -->
+    <div class="container col-xl-12 col-md-9 px-4 py-3">
+      <h3 class="form__title">Book Table</h3>
+      <div class="form__wrapper" data-aos="zoom-in">
+        <form name="booking form" method="POST" netlify>
+          <div class="form__group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="First Name" required />
+          </div>
+          <div class="form__group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="Last Name" required />
+          </div>
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" required />
+          </div>
+          <div class="form__group">
+            <label for="tableType">Table Type</label>
+            <select name="tableType" id="tableType" required>
+              <option selected disabled>Choose</option>
+              <option value="small">Small (2 Persons)</option>
+              <option value="medium">Medium (4 Persons)</option>
+              <option value="large">Large (6 Persons & More)</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="guestNumber">Number of Guests</label>
+            <input
+              type="number"
+              id="guestNumber"
+              name="Guest Number"
+              min="1"
+              max="10"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <label for="date">Date of Booking</label>
+            <input type="date" id="date" name="Date" required />
+          </div>
+          <div class="form__group">
+            <label for="time">Time Slot</label>
+            <input type="time" id="time" name="Time" required />
+          </div>
+          <div class="form__group">
+            <label for="bookingPlacement">Table Location</label>
+            <select name="bookingPlacement" id="Table Location" required>
+              <option selected disabled>Choose</option>
+              <option value="lounge">Ming's Premium Lounge</option>
+              <option value="box">Indoor Premium Cabin</option>
+              <option value="Rooftop">Premium Roof-Top Experience</option>
+            </select>
+          </div>
+          <div class="form__group form__group__full">
+            <label for="note">Notes (if any)</label>
+            <textarea name="Note" id="note" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn primary-btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- BOOKING FORM SECTION ENDS -->
+
+    <!-- FOOTER SECTION BEGINS -->
+    <div class="container">
+      <footer class="py-5 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link px-2 text-muted">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menuItems" class="nav-link px-2 text-muted">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link px-2 text-muted">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link px-2 text-muted"
+              >Contact Us</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./booktable.html" class="nav-link px-2 text-muted"
+              >Book Table</a
+            >
+          </li>
+        </ul>
+        <p class="text-center text-muted">
+          &copy; 2022 Kite Technologies, Corporation
+        </p>
+      </footer>
+    </div>
+    <!-- FOOTER SECTION ENDS -->
+
+    <!-- BOOTSTRAP JS BUNDLE -->
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS SCRIPT -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
